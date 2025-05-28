@@ -1,0 +1,7 @@
+# NOT-ALLOWED.TXT
+# 
+# Any devices found, that are listed in this file, will trigger the exit action.
+# Only add devices below which are not allowed on your network or computer.
+# 
+# Example scenario: You have a device which you only connect to WiFi or
+#                   Bluetooth to force your computer to lock or shutdown.

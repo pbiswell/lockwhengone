@@ -1,0 +1,6 @@
+# SOME-DEVICES.TXT
+# 
+# At least 1 device listed below must exist, otherwise trigger the exit action
+# You can modify the minimum number of devices in config.conf with MIN_DEVICES
+# 
+# Example scenario: You have 2 phones, but may only have 1 with you.

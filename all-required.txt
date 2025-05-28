@@ -1,0 +1,8 @@
+# ALL-REQUIRED.TXT
+# 
+# All devices listed below must be present, otherwise the exit action triggers.
+# Only add devices below which must always be findable.
+# 
+# Example scenarios: - Your phone, which you always carry, disconnecting from 
+#                      your home network should lock or shutdown your computer.
+#                    - You have USB security key which must always be connected.
