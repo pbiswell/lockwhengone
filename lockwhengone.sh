@@ -320,7 +320,7 @@ while [ $runloop = 1 ]; do
       "$verbose" && echo "Skipping required devices checks, exit action already triggered";
     fi
     
-    # CHECK FOR SOME REQUIRED DEVICES
+    # CHECK FOR SOME-REQUIRED DEVICES
     if "$keepChecking"; then
       "$verbose" && echo -e "${cCyan}Checking for some-required devices. Minimum required: $MIN_DEVICES${nColor}";
       someInc=0
@@ -334,7 +334,7 @@ while [ $runloop = 1 ]; do
         fi
       done
       "$verbose" && echo "$someInc of $someLen some-required devices found. Minimum required: $MIN_DEVICES";
-      if [ $someInc -lt $MIN_DEVICES ]; then
+      if [[ $someInc -lt $MIN_DEVICES && $someLen -gt 0 ]]; then
         "$verbose" && echo "Triggered exit action, not enough devices were found";
         exitAction;
         exited=true;
