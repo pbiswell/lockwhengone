@@ -334,6 +334,7 @@ while [ $runloop = 1 ]; do
         fi
       done
       "$verbose" && echo "$someInc of $someLen some-required devices found. Minimum required: $MIN_DEVICES";
+      [ $someLen -eq 0 ] && "$verbose" && echo "No devices in some-required list, skipping exit action.";
       if [[ $someInc -lt $MIN_DEVICES && $someLen -gt 0 ]]; then
         "$verbose" && echo "Triggered exit action, not enough devices were found";
         exitAction;
