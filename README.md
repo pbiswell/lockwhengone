@@ -1,6 +1,6 @@
 # LockWhenGone
 
-A script that automatically locks, shuts down, reboots, or runs a script on your computer when your phone, or other devices, become undetectable.
+A script that automatically locks, shuts down, reboots, or runs a script on your computer when your phone, or other devices, become undetectable. More details in the [Purpose](#purpose) section.
 
 Found this useful? Please consider starring this repo, or donating at the sponsorship links in the sidebar, or by clicking button below. Thank you.
 
