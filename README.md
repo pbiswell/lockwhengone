@@ -243,7 +243,7 @@ Success: Completed all checks without triggering exit action.
 Sleeping for 30 seconds before running again. Press CTRL+C to exit script.
 ```
 
-**Verbose output:**
+**Command for verbose output:**
 
 ```
 ./lockwhengone.sh -v

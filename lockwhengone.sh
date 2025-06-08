@@ -162,7 +162,7 @@ function populate(){
   fi
   local arr=();
   declare -gn ArrRef=$2;
-  cat $1 | while read line 
+  cat $1 | while read line || [ -n "$line" ]; 
   do
     if [[ $line =~ ^#.* ]]; then
       # Line is a comment
@@ -230,6 +230,22 @@ function checkDevice(){
     fi
   elif [[ $1 =~ ^network:.* ]]; then
     if eval $NETWORK_SCAN | grep ${1#*:} -q; then
+      "$verbose" && echo "Found: ${1#*:}";
+      foundType=1
+    else
+      "$verbose" && echo "Not found: ${1#*:}";
+      foundType=2
+    fi
+  elif [[ $1 =~ ^ping:.* ]]; then
+    if eval "$PING_SCAN ${1#*:}" | grep "$PING_SUCCESS" -q; then
+      "$verbose" && echo "Found: ${1#*:}";
+      foundType=1
+    else
+      "$verbose" && echo "Not found: ${1#*:}";
+      foundType=2
+    fi
+  elif [[ $1 =~ ^url:.* ]]; then
+    if eval "$WEBSITE_SCAN ${1#*:}" | head -n 1 | grep "$WEBSITE_SUCCESS" -q; then
       "$verbose" && echo "Found: ${1#*:}";
       foundType=1
     else
@@ -353,7 +369,7 @@ while [ $runloop = 1 ]; do
     "$verbose" && echo "Not looping script";
     runloop=0;
   else
-    "$verbose" && echo "Sleeping for $SCAN_INTERVAL seconds before running again. Press CTRL+C to exit script.";
+    echo "Sleeping for $SCAN_INTERVAL seconds before running again. Press CTRL+C to exit script.";
     sleep $SCAN_INTERVAL;
   fi
 done
