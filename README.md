@@ -2,7 +2,7 @@
 
 A script that automatically locks, shuts down, reboots, or runs a script on your computer when your phone, or other devices, become undetectable.
 
-Found this useful? Please consider starring this repo, or donating at the sponsorship links in the sidebar or button below. Thank you.
+Found this useful? Please consider starring this repo, or donating at the sponsorship links in the sidebar, or by clicking button below. Thank you.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V84X6JM)
 
