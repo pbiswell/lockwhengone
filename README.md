@@ -33,6 +33,11 @@ Found this useful? Please consider starring this repo, or donating at the sponso
     - [Reboot Command (REBOOT\_COMMAND)](#reboot-command-reboot_command)
     - [Lock Command (LOCK\_COMMAND)](#lock-command-lock_command)
     - [Minimum Devices (MIN\_DEVICES)](#minimum-devices-min_devices)
+    - [USB Scan (USB\_SCAN)](#usb-scan-usb_scan)
+    - [Network Scan (NETWORK\_SCAN)](#network-scan-network_scan)
+    - [Bluetooth Scan (BLUETOOTH\_SCAN)](#bluetooth-scan-bluetooth_scan)
+    - [Pinging IPs or Domains (PING\_SCAN)](#pinging-ips-or-domains-ping_scan)
+    - [URL Checking (WEBSITE\_SCAN)](#url-checking-website_scan)
   - [To Do](#to-do)
   - [Changelog](#changelog)
 
@@ -43,6 +48,8 @@ The intended purpose of this script is to check every X seconds whether your pho
 I only use Linux, so this is only currently planned to run on Linux. I will test and add more Linux distributions when I distro hop.
 
 ## Installation Guide
+
+This guide assumes you already know how to input commands into the terminal, and know where your home directory is.
 
 ### Requirements
 
@@ -176,6 +183,8 @@ If you want to ping `192.168.1.1`, for example, you would add this line to your 
 ```
 ping:192.168.1.1
 ```
+
+Note: Some devices can and do block pings, for any reason.
 
 #### Adding website addresses
 
@@ -363,6 +372,51 @@ Name: `MIN_DEVICES`
 
 Default value: `1`
 
+> Note: If some-required.txt has no devices listed, this is ignored.
+
+### USB Scan (USB_SCAN)
+
+The command to run when searching for connected USB devices.
+
+Name: `USB_SCAN`
+
+Default value: `"lsusb"`
+
+### Network Scan (NETWORK_SCAN)
+
+The command to run when searching for network devices.
+
+Name: `NETWORK_SCAN`
+
+Default value: `"arp-scan 192.168.1.0/24"`
+
+> Note: The default command requires root permissions.
+
+### Bluetooth Scan (BLUETOOTH_SCAN)
+
+The command to run when searching for connected Bluetooth devices.
+
+Name: `BLUETOOTH_SCAN`
+
+Default value: `"bluetoothctl devices Connected"`
+
+### Pinging IPs or Domains (PING_SCAN)
+
+The command to run when pinging IPs or domains.
+
+Name: `PING_SCAN`
+
+Default value: `"ping -c 1 "`
+
+> Note: The default command only pings 1 time.
+
+### URL Checking (WEBSITE_SCAN)
+
+The command to run when checking web page response codes.
+
+Name: `WEBSITE_SCAN`
+
+Default value: `"curl -si "`
 
 ## To Do
 
