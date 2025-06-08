@@ -1,7 +1,15 @@
+# LockWhenGone
+
+A script that automatically locks, shuts down, reboots, or runs a script on your computer when your phone, or other devices, become undetectable.
+
+Found this useful? Please consider starring this repo, or donating at the sponsorship links in the sidebar or button below. Thank you.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V84X6JM)
+
 # Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [LockWhenGone](#lockwhengone)
+- [Table of Contents](#table-of-contents)
   - [Purpose](#purpose)
   - [Installation Guide](#installation-guide)
     - [Requirements](#requirements)
@@ -27,15 +35,6 @@
     - [Minimum Devices (MIN\_DEVICES)](#minimum-devices-min_devices)
   - [To Do](#to-do)
   - [Changelog](#changelog)
-
-
-# LockWhenGone
-
-A script that automatically locks, shuts down, reboots, or runs a script on your computer when your phone, or other devices, become undetectable.
-
-Found this useful? Please consider starring this repo, or donating at the sponsorship links in the sidebar or button below. Thank you.
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V84X6JM)
 
 ## Purpose
 
