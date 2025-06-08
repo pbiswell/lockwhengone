@@ -216,15 +216,15 @@ Example output:
 ```
 $ sudo arp-scan 192.168.1.0/24
 Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
-192.168.1.1	5b-f2-c8-fa-aa-a4	(Unknown)
-192.168.1.2	b1-bd-57-8c-4b-e5	(Unknown)
-192.168.1.3	1d-7b-ee-bd-bb-75	(Unknown)
+192.168.1.1	5b:f2:c8:fa:aa:a4	(Unknown)
+192.168.1.2	b1:bd:57:8c:4b:e5	(Unknown)
+192.168.1.3	1d:7b:ee:bd:bb:75	(Unknown)
 ```
 
-If you decide to add `192.168.1.1	5b-f2-c8-fa-aa-a4` from the example output, you can add this line to your [chosen device file](#edit-device-files):
+If you decide to add `192.168.1.1	5b:f2:c8:fa:aa:a4` from the example output, you can add this line to your [chosen device file](#edit-device-files):
 
 ```
-network:5b-f2-c8-fa-aa-a4
+network:5b:f2:c8:fa:aa:a4
 ```
 
 ### Run the script
