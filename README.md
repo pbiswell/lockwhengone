@@ -163,6 +163,8 @@ bluetooth:E7:FC:C6:D5:5E:F6 My Phone
 bluetooth:My Phone
 ```
 
+**Note:** The Bluetooth device must be **connected** to your computer by Bluetooth to be detected. The device just being nearby is unfortunately not enough.
+
 #### Adding ping addresses
 
 You can add IP addresses or domains to ping. Non-local addresses may take a long time to respond.
@@ -214,15 +216,15 @@ Example output:
 ```
 $ sudo arp-scan 192.168.1.0/24
 Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
-192.168.1.1	34:d8:56:6d:bc:4b	(Unknown)
-192.168.1.2	7c:a1:ae:54:9c:13	(Unknown)
-192.168.1.3	b6:ca:a7:e9:79:6a	(Unknown)
+192.168.1.1	5b-f2-c8-fa-aa-a4	(Unknown)
+192.168.1.2	b1-bd-57-8c-4b-e5	(Unknown)
+192.168.1.3	1d-7b-ee-bd-bb-75	(Unknown)
 ```
 
-If you decide to add `(192.168.1.4) at 8c:5f:df:22:d2:39` from the example output, you can add this line to your [chosen device file](#edit-device-files):
+If you decide to add `192.168.1.1	5b-f2-c8-fa-aa-a4` from the example output, you can add this line to your [chosen device file](#edit-device-files):
 
 ```
-network:8c:5f:df:22:d2:39
+network:5b-f2-c8-fa-aa-a4
 ```
 
 ### Run the script
