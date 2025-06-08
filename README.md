@@ -45,7 +45,7 @@ Found this useful? Please consider starring this repo, or donating at the sponso
 
 The intended purpose of this script is to check every X seconds whether your phone(s) or other devices are detectable, and if they aren't, then lock, shutdown, reboot, or run a script on the computer automatically. I initially made this so that if I leave home, my computer will lock itself. It checks for devices that are on the local network, connected by Bluetooth, or by USB. It can also ping IPs or load URLs. Devices are split into 3 groups, ones which should never be connected, ones which must always be connected, and a group of devices where at least 1 must always be connected(configurable).
 
-I only use Linux, so this is only currently planned to run on Linux. I will test and add more Linux distributions when I distro hop.
+I only use Linux, so this is only currently planned to run on Linux. I will test and add more commands compatible with other Linux distributions when I distro hop.
 
 ## Installation Guide
 
