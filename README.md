@@ -24,6 +24,7 @@
     - [Shutdown Command (SHUTDOWN\_COMMAND)](#shutdown-command-shutdown_command)
     - [Reboot Command (REBOOT\_COMMAND)](#reboot-command-reboot_command)
     - [Lock Command (LOCK\_COMMAND)](#lock-command-lock_command)
+    - [Minimum Devices (MIN\_DEVICES)](#minimum-devices-min_devices)
   - [To Do](#to-do)
   - [Changelog](#changelog)
 
@@ -353,9 +354,20 @@ Default value: `"xdg-screensaver lock"`
 
 > Change this to the desktop lock command (may change depending on distro).
 
+### Minimum Devices (MIN_DEVICES)
+
+The mimimum amount of devices to be found in `some-required.txt`
+
+Name: `MIN_DEVICES`
+
+Default value: `1`
+
+
 ## To Do
 
 * Add retries for `ping:` and `url:`
+* More detailed documentation
+* Add devices from command line
 
 ## Changelog
 
